@@ -1,0 +1,21 @@
+---
+title: "Homework1"
+author: "Ditian Li"
+date: "2018/9/20"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r #Problem 1-1&1-2}
+library(tidyverse)
+
+set.seed(666)
+p1_df = tibble(
+  z = runif(10, min = 0, max = 5),
+  vec_logical = z > 2,
+  vec_char = c("a", "b", "c", "d","e","f","g","h","i","j"),
+  vec_factor = factor(c("male", "male", "female", "female","male", "male", "female", "female", "female", "female"))
+)
