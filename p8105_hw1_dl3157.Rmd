@@ -74,3 +74,15 @@ image1 = ggplot(p2_df, aes(x = x, y = y,color = l)) + geom_point()
 ggsave("image1.png",plot = image1)
 image1
 ```
+
+```{r yx_scatter2}
+image2 = ggplot(p2_df, aes(x = x,y = y,color = m)) + geom_point()
+ggsave("image2.png",plot = image2)
+image2
+```
+
+```{r yx_scatter3}
+image3 = ggplot(p2_df, aes(x = x,y = y,color = n)) + geom_point()
+ggsave("image3.png",plot = image3)
+image3
+```
